@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- 1. Forçar HTTPS (SSL) e URL Canônica -->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="canonical" href="https://wswr.com.br/">
+  <script>
+    // Redirecionamento forçado para HTTPS no navegador (evita conexões HTTP inseguras)
+    if (location.protocol === 'http:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+      location.replace('https:' + window.location.href.substring(window.location.protocol.length));
+    }
+  </script>
+
+  <!-- 2. Título & Meta Tags de Indexação e SEO -->
+  <title>WSWR IA | Soluções em Inteligência Artificial & Posicionamento Digital</title>
+  <meta name="description" content="Automatize seu atendimento 24/7 com IA Oficial no WhatsApp e conquiste o topo do Google Meu Negócio em Campinas, Mogi Mirim e Região. Formação técnica especializada pelo SENAI.">
+  <meta name="keywords" content="Inteligência Artificial Mogi Mirim, IA WhatsApp Campinas, Chatbot para Clínicas, Google Meu Negócio Mogi Mirim, Google Maps Campinas, WSWR IA, Rua João Mantovani">
+  <meta name="author" content="WSWR IA - Soluções em Inteligência Artificial">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- 3. Google Search Console (Verificação de Propriedade) -->
+  <meta name="google-site-verification" content="COLOQUE_SEU_CODIGO_DO_SEARCH_CONSOLE_AQUI">
+
+  <!-- 4. Google Analytics 4 (GA4) -->
+  <!-- Substitua 'G-XXXXXXXXXX' pelo seu ID de Medição Oficial do GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX', {
+      send_page_view: true,
+      cookie_flags: 'SameSite=None;Secure'
+    });
+  </script>
+
+  <!-- 5. Meta Tags de Compartilhamento Social (Open Graph & WhatsApp) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wswr.com.br/">
+  <meta property="og:title" content="WSWR IA | Soluções em Inteligência Artificial & Posicionamento Digital">
+  <meta property="og:description" content="Automatize seu atendimento 24/7 com IA Oficial no WhatsApp e domine as buscas do Google Maps em Campinas, Mogi Mirim e Região. Formação técnica certificada SENAI.">
+  <meta property="og:image" content="https://wswr.com.br/assets/wswr-ia-logo.jpg">
+  <meta property="og:image:secure_url" content="https://wswr.com.br/assets/wswr-ia-logo.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="WSWR IA - Soluções em Inteligência Artificial & Posicionamento Digital">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="WSWR IA">
+
+  <!-- Meta Tags para Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://wswr.com.br/">
+  <meta name="twitter:title" content="WSWR IA | Soluções em Inteligência Artificial & Posicionamento Digital">
+  <meta name="twitter:description" content="Automatize seu atendimento 24/7 com IA Oficial no WhatsApp e domine as buscas do Google Maps em Campinas, Mogi Mirim e Região.">
+  <meta name="twitter:image" content="https://wswr.com.br/assets/wswr-ia-logo.jpg">
+
+  <!-- 6. Google Fonts: Outfit & Plus Jakarta Sans com Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- 7. Dados Estruturados Schema.org (LocalBusiness Oficial - Consistência NAP) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://wswr.com.br/#localbusiness",
+    "name": "WSWR IA - Soluções em Inteligência Artificial & Posicionamento Digital",
+    "alternateName": "WSWR IA",
+    "image": "https://wswr.com.br/assets/wswr-ia-logo.jpg",
+    "logo": "https://wswr.com.br/assets/wswr-ia-logo.jpg",
+    "url": "https://wswr.com.br/",
+    "telephone": "+55-19-99848-0403",
+    "priceRange": "$$",
+    "currenciesAccepted": "BRL",
+    "paymentAccepted": "Pix, Cartão de Crédito, Transferência Bancária",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua João Mantovani, 459",
+      "addressLocality": "Mogi Mirim",
+      "addressRegion": "SP",
+      "postalCode": "13800-458",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -22.4360052,
+      "longitude": -46.9819739
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "13:00"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-19-99848-0403",
+      "contactType": "customer service",
+      "availableLanguage": "Portuguese",
+      "areaServed": "BR"
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Mogi Mirim"
+      },
+      {
+        "@type": "City",
+        "name": "Mogi Guaçu"
+      },
+      {
+        "@type": "City",
+        "name": "Campinas"
+      },
+      {
+        "@type": "City",
+        "name": "Jundiaí"
+      },
+      {
+        "@type": "City",
+        "name": "Paulínia"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Região Metropolitana de Campinas"
+      }
+    ],
+    "description": "Desenvolvimento de agentes de Inteligência Artificial para WhatsApp e otimização avançada de Perfil da Empresa no Google (Google Meu Negócio). Formação técnica SENAI em IA Generativa com Google Antigravity.",
+    "taxID": "62.205.283/0001-65"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Informações Regionais">
+    <div class="container announcement-inner">
+      <span class="pulse-dot"></span>
+      <p><strong>Base Operacional em Mogi Mirim - SP</strong> • Atendimento Especializado para Clínicas e Empresas em <strong>Campinas e Toda a Região</strong></p>
+      <a href="https://wa.me/5519998480403?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20IA%20e%20Google%20da%20WSWR." target="_blank" rel="noopener noreferrer" class="announcement-link">
+        Falar com Especialista
+        <svg viewBox="0 0 20 20" fill="currentColor" class="mini-arrow" width="14" height="14"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <nav class="nav-links" id="navLinks" aria-label="Navegação Principal">
+        <a href="#camada-whatsapp" class="nav-link">IA para WhatsApp</a>
+        <a href="#camada-google" class="nav-link">Google Meu Negócio</a>
+        <a href="#autoridade-senai" class="nav-link">Formação SENAI</a>
+        <a href="#ecossistema" class="nav-link">Sobre a WSWR</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/5519998480403?text=Ol%C3%A1!%20Gostaria%20de%20automatizar%20o%20atendimento%20da%20minha%20empresa%20com%20IA%20e%20dominar%20o%20Google." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-nav" id="navCtaBtn">
+          <!-- WhatsApp Original SVG -->
+          <img src="assets/whatsapp.svg" alt="WhatsApp" class="icon-whatsapp-svg" width="20" height="20">
+          <span>Falar no WhatsApp</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-grid-pattern"></div>
+      
+      <div class="container hero-container">
+        <!-- Tagline / Badge Superior -->
+        <div class="hero-badge animate-fade-in">
+          <svg viewBox="0 0 20 20" fill="currentColor" class="badge-svg-icon" width="16" height="16">
+            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+          </svg>
+          <span class="badge-text">Inteligência Artificial & SEO Local em Mogi Mirim, Campinas e Região</span>
+        </div>
+
+        <!-- Título Principal (H1) com foco nas cores verde e vermelho da WSWR -->
+        <h1 class="hero-title animate-fade-in delay-1">
+          Automatize seu Atendimento 24/7 e <span class="gradient-wswr-text">Domine as Buscas do Google</span> na Sua Região.
+        </h1>
+
+        <!-- Subtítulo -->
+        <p class="hero-subtitle animate-fade-in delay-2">
+          Unimos <strong>agentes de Inteligência Artificial para WhatsApp</strong> e <strong>otimização avançada do Perfil da Empresa no Google</strong>. Menos tempo perdido respondendo mensagens repetitivas, mais clientes qualificados e fechamento de negócios com a sua empresa.
+        </p>
+
+        <!-- Botões CTA Principal -->
+        <div class="hero-cta-wrapper animate-fade-in delay-3">
+          <a href="https://wa.me/5519998480403?text=Ol%C3%A1!%20Gostaria%20de%20automatizar%20o%20atendimento%20da%20minha%20empresa%20com%20IA%20e%20dominar%20o%20Google." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-hero" id="heroMainCta">
+            <!-- Official WhatsApp SVG -->
+            <img src="assets/whatsapp.svg" alt="WhatsApp" class="icon-whatsapp-svg-hero" width="28" height="28">
+            <div class="cta-text-group">
+              <span class="cta-main-text">Quero Automatizar Minha Empresa</span>
+              <span class="cta-sub-text">Clique para iniciar no WhatsApp • Resposta Imediata</span>
+            </div>
+          </a>
+          <a href="#camada-whatsapp" class="btn btn-secondary-hero">
+            Ver Simulação Interativa
+          </a>
+        </div>
+
+        <!-- Provas Rápidas -->
+        <div class="quick-proofs animate-fade-in delay-4">
+          <div class="proof-item">
+            <span class="proof-check">✓</span>
+            <span>Respostas em Segundos</span>
+          </div>
+          <span class="proof-divider">•</span>
+          <div class="proof-item">
+            <span class="proof-check">✓</span>
+            <span>Integração Google Maps</span>
+          </div>
+          <span class="proof-divider">•</span>
+          <div class="proof-item">
+            <span class="proof-check">✓</span>
+            <span>Tecnologia Certificada SENAI</span>
+          </div>
+        </div>
+
+        <!-- Trust Badges Bar com Ícones Oficiais Autênticos -->
+        <div class="hero-tech-strip">
+          <span class="tech-strip-label">TECNOLOGIAS HOMOLOGADAS & CERTIFICADAS</span>
+          <div class="tech-strip-badges">
+            
+            <!-- Google Antigravity Oficial SVG -->
+            <div class="tech-badge tech-badge-antigravity" title="Google Antigravity">
+              <img src="assets/google-antigravity.svg" alt="Google Antigravity" class="tech-svg-antigravity">
+            </div>
+
+            <!-- Google Meu Negócio Oficial SVG -->
+            <div class="tech-badge">
+              <img src="assets/google-my-business.svg" alt="Google Meu Negócio" class="tech-svg" width="22" height="22">
+              <span>Google Meu Negócio</span>
+            </div>
+
+            <!-- Google Maps Oficial SVG -->
+            <div class="tech-badge">
+              <img src="assets/google-maps.svg" alt="Google Maps" class="tech-svg" width="22" height="22">
+              <span>Google Maps SEO</span>
+            </div>
+
+            <!-- Formação SENAI Oficial -->
+            <div class="tech-badge">
+              <span class="badge-senai-tag">SENAI</span>
+              <span>IA Generativa Homologada</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CAMADA 1: CHATBOT DE IA PARA CLÍNICAS E SERVIÇOS (RECRIAÇÃO FIEL WHATSAPP WEB) -->
+    <section class="section layer-whatsapp-section" id="camada-whatsapp">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag tag-whatsapp">
+            <!-- Official WhatsApp SVG -->
+            <img src="assets/whatsapp.svg" alt="WhatsApp" width="18" height="18">
+            <span>API Oficial do WhatsApp • Meta Cloud API</span>
+          </div>
+          <h2 class="section-title">
+            Confirmação Ativa & Anti-No-Show — <span class="highlight-green">Zero Faltas em Consultas</span>.
+          </h2>
+          <p class="section-subtitle">
+            Desenvolvido diretamente sobre a <strong>API Oficial do WhatsApp (Meta Cloud API)</strong>: estabilidade comercial, zero risco de banimento de número, selo de verificação e botões interativos para confirmação e reagendamento instantâneo.
+          </p>
+        </div>
+
+        <div class="layer-grid">
+          <!-- Lado Esquerdo: Benefícios Chave -->
+          <div class="benefits-column">
+            
+            <div class="benefit-card">
+              <div class="benefit-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="b-svg-icon" width="24" height="24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+              <div class="benefit-content">
+                <h3>API Oficial do WhatsApp (Meta Cloud API)</h3>
+                <p>Segurança total para a sua marca. Diferente de bots não oficiais que são bloqueados, a API Oficial da Meta garante alta taxa de entrega, suporte a botões nativos e zero risco de banimento do seu número comercial.</p>
+              </div>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="b-svg-icon" width="24" height="24">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                  <path d="M9 16l2 2 4-4"/>
+                </svg>
+              </div>
+              <div class="benefit-content">
+                <h3>Confirmação Ativa Anti-No-Show</h3>
+                <p>O chatbot envia lembretes estratégicos automáticos antes do horário marcado. O paciente confirma a presença com apenas 1 clique em botão interativo, eliminando faltas e buracos na agenda do consultório.</p>
+              </div>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="b-svg-icon" width="24" height="24">
+                  <polyline points="23 4 23 10 17 10"/>
+                  <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                </svg>
+              </div>
+              <div class="benefit-content">
+                <h3>Reagendamento Instantâneo & Fila Inteligente</h3>
+                <p>Caso o paciente não possa comparecer, o bot oferece novos horários disponíveis na hora, atualiza o sistema e disponibiliza o horário que vagou para quem está na lista de espera, sem ocupar sua equipe.</p>
+              </div>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="b-svg-icon" width="24" height="24">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                </svg>
+              </div>
+              <div class="benefit-content">
+                <h3>Atendimento Humanizado 24/7 & Treinado</h3>
+                <p>Compreende linguagem natural, dúvidas sobre procedimentos, valores, preparos pré-consulta e convênios médicos/odontológicos, respondendo prontamente em segundos a qualquer hora do dia ou da noite.</p>
+              </div>
+            </div>
+
+            <div class="action-box">
+              <a href="https://wa.me/5519998480403?text=Ol%C3%A1!%20Quero%20uma%20demonstra%C3%A7%C3%A3o%20do%20Chatbot%20com%20IA%20e%20API%20Oficial%20do%20WhatsApp%20para%20minha%20cl%C3%ADnica%2Fempresa." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-solid">
+                <img src="assets/whatsapp.svg" alt="WhatsApp" width="20" height="20">
+                <span>Solicitar Demonstração Gratuita</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Lado Direito: Demonstração Funcional do Chat do Cliente (API Oficial do WhatsApp) -->
+          <div class="simulator-column">
+            <div class="wa-web-frame">
+              
+              <!-- Painel Exclusivo do Chat do Cliente (API Oficial do WhatsApp) -->
+              <div class="wa-web-main">
+                
+                <!-- Topo da Conversa com Verificação Oficial Meta -->
+                <div class="wa-header">
+                  <div class="wa-header-left">
+                    <div class="wa-avatar">
+                      <div class="wa-avatar-img">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M3 21h18"/>
+                          <path d="M5 21V7l8-4v18"/>
+                          <path d="M19 21V11l-6-3"/>
+                          <path d="M9 9h1"/>
+                          <path d="M9 13h1"/>
+                        </svg>
+                      </div>
+                      <span class="wa-online-badge"></span>
+                    </div>
+                    <div class="wa-contact-info">
+                      <div class="wa-contact-name">
+                        <span>Clínica WSWR • Atendimento IA</span>
+                        <!-- Selo Verde Oficial Meta Verified -->
+                        <svg viewBox="0 0 18 18" width="15" height="15" fill="#00A884" class="wa-verified" title="Conta Comercial Oficial Verificada no WhatsApp">
+                          <path d="M9 0L11.5 2.5L15 2.5L15.5 6L18 8.5L16.5 12L17.5 15.5L14 16L12 18.5L9 17L6 18.5L4 16L0.5 15.5L1.5 12L0 8.5L2.5 6L3 2.5L6.5 2.5L9 0Z"/>
+                          <path d="M7.5 12.5L4 9L5.4 7.6L7.5 9.7L12.6 4.6L14 6L7.5 12.5Z" fill="#FFFFFF"/>
+                        </svg>
+                      </div>
+                      <span class="wa-contact-status" id="waStatusText">Conta Comercial Oficial • API WhatsApp Meta</span>
+                    </div>
+                  </div>
+
+                  <!-- Ação de Reiniciar Demo -->
+                  <div class="wa-header-right-actions">
+                    <button class="wa-reset-header-btn" id="resetDemoBtn" title="Reiniciar Demonstração">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="23 4 23 10 17 10"></polyline>
+                        <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                      </svg>
+                      <span>Reiniciar Demo</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Área de Mensagens (Wallpaper WhatsApp Web com Doodle) -->
+                <div class="wa-chat-body" id="waChatBody">
+                  <div class="wa-date-pill"><span>HOJE</span></div>
+                  <div class="wa-encryption-notice">
+                    <svg viewBox="0 0 20 20" fill="currentColor" width="12" height="12" style="display:inline-block; vertical-align:-1px; margin-right:4px;"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg>
+                    Mensagem oficial via <strong>WhatsApp Cloud API (Meta)</strong>. Criptografia ponta a ponta e botões interativos de confirmação rápida.
+                  </div>
+
+                  <!-- Container Dinâmico da Simulação Anti-No-Show -->
+                  <div id="demoChatMessages"></div>
+
+                  <!-- Indicador de Digitando Real -->
+                  <div class="wa-typing-indicator" id="waTypingIndicator" style="display: none;">
+                    <span class="typing-text">IA digitando</span>
+                    <div class="typing-dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Rodapé Fiel WhatsApp Web -->
+                <div class="wa-footer-input">
+                  <button class="wa-input-icon-btn" title="Emojis">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="#8696A0"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-3.5-9c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm7 0c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-3.5 5.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+                  </button>
+                  <button class="wa-input-icon-btn" title="Anexo">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="#8696A0"><path d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5a2.5 2.5 0 0 1 5 0v10.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5V6H9v9.5a3 3 0 0 0 6 0V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z"/></svg>
+                  </button>
+                  <div class="wa-input-box">
+                    <input type="text" id="demoChatInput" placeholder="Clique em um botão acima ou digite sua resposta..." autocomplete="off">
+                  </div>
+                  <button class="wa-mic-btn" id="demoSendBtn" aria-label="Enviar Simulação" title="Enviar Mensagem">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="#FFFFFF"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. CAMADA 2: DOMÍNIO DO GOOGLE MEU NEGÓCIO (FOCO NAS CORES AZUL, BRANCO, VERMELHO, AMARELO E VERDE) -->
+    <section class="section layer-google-section" id="camada-google">
+      
+      <!-- Faixa de Cores Oficiais do Google -->
+      <div class="google-quad-bar">
+        <span class="q-blue"></span>
+        <span class="q-red"></span>
+        <span class="q-yellow"></span>
+        <span class="q-green"></span>
+      </div>
+
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag tag-google">
+            <!-- Google My Business SVG Oficial -->
+            <img src="assets/google-my-business.svg" alt="Google Meu Negócio" width="18" height="18" class="tag-svg-icon">
+            <span>Camada 2: Autoridade no Google Maps & Local SEO</span>
+          </div>
+          <h2 class="section-title text-google-title">
+            Sua Empresa no Topo das Buscas Quando o <span class="highlight-google-gradient">Cliente Mais Precisa</span>.
+          </h2>
+          <p class="section-subtitle text-google-sub">
+            De nada adianta ter o melhor atendimento se os clientes da sua cidade e região encontram o seu concorrente primeiro no Google Maps.
+          </p>
+        </div>
+
+        <!-- O Comparativo Visual: Antes vs. Depois -->
+        <div class="comparison-grid">
+          
+          <!-- Card ANTES: Ficha Esquecida -->
+          <div class="comp-card comp-card-before">
+            <div class="comp-card-badge badge-danger">
+              <span>✕ PERFIL COMUM / ESQUECIDO</span>
+            </div>
+            <div class="comp-profile-mock">
+              <div class="mock-header">
+                <div class="mock-avatar gray-avatar">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#64748B" stroke-width="2">
+                    <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+                    <line x1="9" y1="6" x2="9" y2="6.01"/>
+                    <line x1="15" y1="6" x2="15" y2="6.01"/>
+                    <line x1="9" y1="10" x2="9" y2="10.01"/>
+                    <line x1="15" y1="10" x2="15" y2="10.01"/>
+                    <line x1="9" y1="14" x2="9" y2="14.01"/>
+                    <line x1="15" y1="14" x2="15" y2="14.01"/>
+                  </svg>
+                </div>
+                <div class="mock-details">
+                  <div class="mock-title gray-title">Clínica Genérica</div>
+                  <div class="mock-rating text-danger-rating">
+                    <span>3.2</span>
+                    <span class="stars stars-unrated">★★★☆☆</span>
+                    <span class="count">(4 avaliações antigas)</span>
+                  </div>
+                  <div class="mock-category">Consultório • Sem horário atualizado</div>
+                </div>
+              </div>
+              <ul class="comp-check-list list-danger">
+                <li><span class="icon-cross">✕</span> Poucas avaliações e sem respostas da equipe</li>
+                <li><span class="icon-cross">✕</span> Fotos escuras, desatualizadas ou ausentes</li>
+                <li><span class="icon-cross">✕</span> Sem palavras-chave da região (invisível em Mogi e Campinas)</li>
+                <li><span class="icon-cross">✕</span> Sem botões diretos de agendamento ou WhatsApp</li>
+                <li><span class="icon-cross">✕</span> <strong>Resultado:</strong> Clientes ligam para o concorrente no topo</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card DEPOIS: Perfil WSWR Otimizado -->
+          <div class="comp-card comp-card-after">
+            <div class="comp-card-badge badge-success">
+              <span>✓ PERFIL OTIMIZADO PELA WSWR (TOP #1)</span>
+            </div>
+            <div class="comp-profile-mock mock-success">
+              <div class="mock-header">
+                <div class="mock-avatar verified-avatar">
+                  <!-- Google My Business SVG -->
+                  <img src="assets/google-my-business.svg" alt="Google Meu Negócio" width="32" height="32">
+                  <div class="rank-tag">#1 LUGAR</div>
+                </div>
+                <div class="mock-details">
+                  <div class="mock-title title-highlight">Sua Clínica & Consultório</div>
+                  <div class="mock-rating text-success-rating">
+                    <span class="rating-num">5.0</span>
+                    <span class="stars">★★★★★</span>
+                    <span class="count">(184 avaliações reais e ativas)</span>
+                  </div>
+                  <div class="mock-category"><span class="badge-open">Aberto agora</span> • Atualizado diariamente</div>
+                </div>
+              </div>
+
+              <!-- Botões de Ação do Perfil Google -->
+              <div class="mock-google-actions">
+                <div class="g-action-btn">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#1A73E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                  Website
+                </div>
+                <div class="g-action-btn highlight-maps-btn">
+                  <!-- Google Maps SVG Oficial -->
+                  <img src="assets/google-maps.svg" alt="Google Maps" width="16" height="16">
+                  Rotas
+                </div>
+                <div class="g-action-btn highlight-g-btn">
+                  <!-- WhatsApp SVG Oficial -->
+                  <img src="assets/whatsapp.svg" alt="WhatsApp" width="16" height="16">
+                  WhatsApp
+                </div>
+                <div class="g-action-btn">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#1A73E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                  </svg>
+                  Agendar
+                </div>
+              </div>
+
+              <ul class="comp-check-list list-success">
+                <li><span class="icon-check">✓</span> <strong>Topo absoluto</strong> das pesquisas de Campinas, Mogi Mirim e Mogi Guaçu</li>
+                <li><span class="icon-check">✓</span> <strong>SEO Local Agressivo</strong> com dados estruturados (Schema Google)</li>
+                <li><span class="icon-check">✓</span> <strong>Fotos Profissionais</strong> otimizadas, catalogadas e georreferenciadas</li>
+                <li><span class="icon-check">✓</span> <strong>Gestão de Avaliações 5 Estrelas</strong> com respostas estratégicas</li>
+                <li><span class="icon-check">✓</span> <strong>Atalho Direto:</strong> O cliente clica e cai no seu WhatsApp automatizado!</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Recursos do Serviço Google com Ícones Oficiais -->
+        <div class="google-features-grid">
+          
+          <div class="g-feature-card">
+            <div class="g-feat-icon-wrap icon-wrap-maps">
+              <!-- Google Maps SVG -->
+              <img src="assets/google-maps.svg" alt="Google Maps" width="34" height="34">
+            </div>
+            <h3>SEO Local Agressivo</h3>
+            <p>Mapeamento e inserção das palavras-chave exatas que pacientes e clientes digitam na sua cidade e cidades vizinhas quando estão com urgência.</p>
+          </div>
+
+          <div class="g-feature-card">
+            <div class="g-feat-icon-wrap icon-wrap-gmb">
+              <!-- Google My Business SVG -->
+              <img src="assets/google-my-business.svg" alt="Google Meu Negócio" width="34" height="34">
+            </div>
+            <h3>Atalhos e Links Diretos</h3>
+            <p>Configuração de botões de agendamento online, rotas de GPS e chamada direta no WhatsApp para não perder nenhum clique qualificado.</p>
+          </div>
+
+          <div class="g-feature-card">
+            <div class="g-feat-icon-wrap icon-wrap-stars">
+              <span class="google-star-icon">★</span>
+            </div>
+            <h3>Gestão de Autoridade</h3>
+            <p>Metodologia inteligente para transformar pacientes satisfeitos em avaliações 5 estrelas no Google, blindando a reputação da sua marca.</p>
+          </div>
+
+        </div>
+
+        <div class="text-center cta-section-bottom">
+          <a href="https://wa.me/5519998480403?text=Ol%C3%A1!%20Quero%20colocar%20meu%20Perfil%20do%20Google%20no%20topo%20das%20buscas%20da%20minha%20regi%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn btn-google-cta">
+            <!-- Google Maps SVG -->
+            <img src="assets/google-maps.svg" alt="Google Maps" width="22" height="22">
+            <span>Quero Minha Empresa no Topo do Google</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. SEÇÃO DE AUTORIDADE TÉCNICA (FORMAÇÃO OFICIAL SENAI & GOOGLE ANTIGRAVITY) -->
+    <section class="section authority-section" id="autoridade-senai">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag tag-authority">
+            <span class="auth-star">★</span>
+            <span>Credibilidade & Formação Técnica</span>
+          </div>
+          <h2 class="section-title">
+            Engenharia de IA Responsável e <span class="gradient-wswr-text">Formação SENAI</span>.
+          </h2>
+          <p class="section-subtitle">
+            Diferente de soluções amadoras que conectam robôs frágeis e instáveis, entregamos inteligência artificial corporativa com formação técnica pela mais respeitada instituição de ensino tecnológico do país.
+          </p>
+        </div>
+
+        <!-- Card Mestre de Apresentação da Formação SENAI -->
+        <div class="senai-master-card">
+          <div class="senai-card-glow"></div>
+          
+          <div class="senai-course-showcase">
+            
+            <!-- Coluna Esquerda: Cartão Institucional do Curso SENAI -->
+            <div class="senai-institution-col">
+              
+              <div class="senai-badge-header">
+                <div class="senai-brand-pill">
+                  <span class="senai-brand-text">SENAI</span>
+                  <span class="senai-unit-text">Escola Mogi Guaçu</span>
+                </div>
+                <span class="senai-status-tag">Formação Homologada</span>
+              </div>
+
+              <div class="course-main-info">
+                <span class="course-category">Especialização Técnica Profissional</span>
+                <h3 class="course-name">
+                  Desenvolvimento de Aplicações com IA Generativa utilizando Google Antigravity
+                </h3>
+                <p class="course-institution-detail">
+                  Formação técnica concluída na <strong>Escola SENAI "Luiz Eulálio de Bueno Vidigal Filho"</strong>, com foco em desenvolvimento de agentes de Inteligência Artificial para o mercado corporativo.
+                </p>
+              </div>
+
+              <!-- Grade de Especificações da Formação -->
+              <div class="course-specs-grid">
+                <div class="spec-card">
+                  <div class="spec-label">Carga Horária</div>
+                  <div class="spec-value">40 Horas</div>
+                  <div class="spec-sub">Engenharia Prática</div>
+                </div>
+
+                <div class="spec-card">
+                  <div class="spec-label">Tecnologia Base</div>
+                  <div class="spec-value">Google Antigravity</div>
+                  <div class="spec-sub">Framework Corporativo</div>
+                </div>
+
+                <div class="spec-card">
+                  <div class="spec-label">Modelos de IA</div>
+                  <div class="spec-value">Vertex AI & Gemini</div>
+                  <div class="spec-sub">LLMs de Alta Performance</div>
+                </div>
+
+                <div class="spec-card">
+                  <div class="spec-label">Padrão Técnico</div>
+                  <div class="spec-value">IA Responsável</div>
+                  <div class="spec-sub">Segurança & Privacidade</div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Coluna Direita: O Que Isso Significa na Prática para a Sua Empresa -->
+            <div class="senai-competencies-col">
+              
+              <div class="comp-header">
+                <span class="comp-kicker">Rigor Técnico Industrial</span>
+                <h4 class="comp-title">Por que a capacitação no SENAI protege seu negócio?</h4>
+                <p class="comp-desc">
+                  No mercado atual, qualquer pessoa conecta um robô genérico e diz que vende IA. Na <strong>WSWR</strong>, suas automações são desenvolvidas sob os padrões da maior instituição de tecnologia aplicada do Brasil.
+                </p>
+              </div>
+
+              <div class="cert-capabilities-list">
+                <div class="cap-item">
+                  <div class="cap-bullet">
+                    <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </div>
+                  <div>
+                    <strong>Engenharia de Prompts Estruturados:</strong>
+                    <span>Eliminação de alucinações. O chatbot nunca inventará procedimentos, preços ou dados que não existem.</span>
+                  </div>
+                </div>
+
+                <div class="cap-item">
+                  <div class="cap-bullet">
+                    <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </div>
+                  <div>
+                    <strong>Código Limpo e Alta Disponibilidade:</strong>
+                    <span>Desenvolvimento com arquitetura robusta, garantindo atendimento contínuo 24 horas por dia sem quedas repentinas.</span>
+                  </div>
+                </div>
+
+                <div class="cap-item">
+                  <div class="cap-bullet">
+                    <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </div>
+                  <div>
+                    <strong>Governança & IA Responsável:</strong>
+                    <span>Proteção rigorosa das conversas e informações sigilosas de pacientes e clientes da sua empresa.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Chamada para Ação com Especialista -->
+              <div class="senai-cta-action">
+                <a href="https://wa.me/5519998480403?text=Ol%C3%A1!%20Vi%20a%20forma%C3%A7%C3%A3o%20em%20IA%20do%20SENAI%20e%20gostaria%20de%20um%20projeto%20sob%20medida%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-senai-consult">
+                  <img src="assets/whatsapp.svg" alt="WhatsApp" width="18" height="18">
+                  <span>Consultar Projeto com o Desenvolvedor</span>
+                </a>
+                <span class="senai-cta-note">Atendimento direto pelo desenvolvedor e arquiteto de IA</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Pilares Técnicos -->
+          <div class="senai-pillars-grid">
+            
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <!-- Google Antigravity SVG Oficial -->
+                <img src="assets/google-antigravity.svg" alt="Google Antigravity" class="pillar-antigravity-img">
+              </div>
+              <h4>Google Antigravity & Vertex AI</h4>
+              <p>Desenvolvimento em arquitetura corporativa moderna com Gemini, garantindo raciocínio lógico avançado e segurança estrita.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+              <h4>Garantia de Estabilidade</h4>
+              <p>Sistemas construídos sob medida com código limpo, sem dependência de ferramentas frágeis ou descartáveis que caem sem aviso.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                  <line x1="10" y1="20" x2="14" y2="4"/>
+                </svg>
+              </div>
+              <h4>Engenharia de Prompts de Alta Precisão</h4>
+              <p>Garantia de que a IA nunca alucinará valores, inventará convênios inexistentes ou dará respostas incoerentes aos seus clientes.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. SEÇÃO DE RESULTADOS & ECOSSISTEMA WSWR (CONFIANÇA) -->
+    <section class="section ecosystem-section" id="ecossistema">
+      <div class="container">
+        
+        <div class="ecosystem-box">
+          <div class="eco-content">
+            <div class="section-tag tag-regional">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Mogi Mirim • Campinas • Toda a Região</span>
+            </div>
+            
+            <h2 class="section-title">
+              A mesma excelência técnica que você já conhece na região.
+            </h2>
+            
+            <p class="eco-lead-text">
+              A marca <strong>WSWR</strong> nasceu com a missão de resolver problemas complexos através da tecnologia — desde a infraestrutura física de hardwares e computadores até a implementação das mais avançadas soluções de software e inteligência artificial do mercado.
+            </p>
+
+            <div class="eco-differentials-grid">
+              
+              <div class="diff-card">
+                <div class="diff-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"/>
+                    <polyline points="8 6 2 12 8 18"/>
+                  </svg>
+                </div>
+                <div class="diff-info">
+                  <h4>Projetos Sob Medida</h4>
+                  <p>Cada automação e estratégia de SEO é desenhada especificamente para a rotina única da sua clínica, escritório ou empresa.</p>
+                </div>
+              </div>
+
+              <div class="diff-card">
+                <div class="diff-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="diff-info">
+                  <h4>Suporte Local e Regional</h4>
+                  <p>Atendimento humanizado, reuniões presenciais ou online e contato direto com quem realmente entende de código e dados.</p>
+                </div>
+              </div>
+
+              <div class="diff-card">
+                <div class="diff-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <div class="diff-info">
+                  <h4>Privacidade e LGPD</h4>
+                  <p>Tratamento ético dos dados dos seus pacientes e clientes com sigilo profissional e compliance regulatório.</p>
+                </div>
+              </div>
+
+              <div class="diff-card">
+                <div class="diff-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                    <polyline points="17 6 23 6 23 12"/>
+                  </svg>
+                </div>
+                <div class="diff-info">
+                  <h4>Foco em ROI Real</h4>
+                  <p>Não entregamos "enfeites digitais". Nosso foco é gerar agendamentos confirmados e novos clientes na sua porta.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Card Resumo de Autoridade Regional -->
+          <div class="eco-sidebar-card">
+            <div class="eco-card-inner">
+              <div class="eco-badge-highlight">POLO TECNOLÓGICO REGIONAL</div>
+              <h3 class="eco-sidebar-title">WSWR Soluções em IA</h3>
+              <p class="eco-sidebar-desc">Conectando o dinamismo de Campinas à proximidade e confiabilidade de Mogi Mirim e Mogi Guaçu.</p>
+              
+              <div class="eco-stat-item">
+                <span class="stat-number stat-green">24/7</span>
+                <span class="stat-label">Atendimento ativo com IA sem interrupções</span>
+              </div>
+              <div class="eco-stat-item">
+                <span class="stat-number stat-red">#1</span>
+                <span class="stat-label">Foco no topo das buscas regionais no Google</span>
+              </div>
+              <div class="eco-stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Engenharia homologada com Google & SENAI</span>
+              </div>
+
+              <div class="eco-cta-wrapper">
+                <a href="https://wa.me/5519998480403?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20conversa%20estrat%C3%A9gica%20sobre%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-solid full-width">
+                  <img src="assets/whatsapp.svg" alt="WhatsApp" width="20" height="20">
+                  <span>Agendar Diagnóstico Gratuito</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BANNER FINAL CTA -->
+    <section class="section final-cta-section">
+      <div class="container text-center">
+        <div class="final-cta-card">
+          <h2 class="final-title">Pronto para colocar sua empresa no piloto automático e dominar sua região?</h2>
+          <p class="final-subtitle">Converse diretamente com o especialista da WSWR. Desenvolvemos o plano ideal para a sua clínica ou empresa em menos de 48 horas.</p>
+          <div class="final-btn-group">
+            <a href="https://wa.me/5519998480403?text=Ol%C3%A1!%20Quero%20dar%20o%20pr%C3%B3ximo%20passo%20e%20automatizar%20minha%20empresa%20com%20a%20WSWR." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-hero">
+              <img src="assets/whatsapp.svg" alt="WhatsApp" width="26" height="26">
+              <span>Falar Agora no WhatsApp: (19) 99848-0403</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 6. FOOTER / RODAPÉ -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Coluna 1: Marca & Descrição (Pronto para Nova Logo) -->
+      <div class="footer-col brand-col">
+        <div class="footer-brand">
+          <img src="assets/wswr-ia-logo.jpg" alt="WSWR IA - Soluções em Inteligência Artificial" class="footer-logo-img" width="72" height="72">
+        </div>
+        <p class="footer-tagline">
+          Soluções em Inteligência Artificial & Posicionamento Digital.
+        </p>
+        <p class="footer-summary">
+          Unimos tecnologia proprietária de ponta, certificada pelo SENAI e baseada no ecossistema Google, para colocar sua clínica ou empresa na liderança regional.
+        </p>
+      </div>
+
+      <!-- Coluna 2: Localização & Atendimento -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Localização & Cobertura</h4>
+        <ul class="footer-info-list">
+          <li>
+            <span class="f-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div>
+              <strong>Endereço Operacional:</strong><br>
+              Rua João Mantovani, 459 - Bairro Saúde<br>
+              Mogi Mirim - SP • CEP 13800-458
+            </div>
+          </li>
+          <li>
+            <span class="f-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </span>
+            <div>
+              <strong>Atendimento Digital Especializado:</strong><br>
+              Campinas, Mogi Guaçu, Jundiaí, Paulínia e Toda a Região Metropolitana
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Coluna 3: Contato & Dados Legais -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Contato Oficial</h4>
+        <ul class="footer-info-list">
+          <li>
+            <span class="f-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <div>
+              <strong>WhatsApp Comercial:</strong><br>
+              <a href="https://wa.me/5519998480403" target="_blank" rel="noopener noreferrer" class="footer-link-highlight">
+                (19) 99848-0403
+              </a>
+            </div>
+          </li>
+          <li>
+            <span class="f-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </span>
+            <div>
+              <strong>CNPJ Unificado:</strong><br>
+              <span class="cnpj-pill">62.205.283/0001-65</span>
+            </div>
+          </li>
+          <li>
+            <span class="f-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </span>
+            <div>
+              <strong>Tecnologias:</strong><br>
+              Google Antigravity • Google Meu Negócio • SENAI IA
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Barra Inferior de Copyright -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 <strong>WSWR IA - Soluções em IA & Posicionamento Digital</strong>. Todos os direitos reservados.</p>
+        <div class="legal-badges">
+          <span>CNPJ: 62.205.283/0001-65</span>
+          <span>•</span>
+          <span>Rua João Mantovani, 459, Mogi Mirim - SP</span>
+          <span>•</span>
+          <span>Segurança & LGPD Garantidas</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante do WhatsApp Oficial -->
+  <a href="https://wa.me/5519998480403?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20WSWR%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20IA%20e%20Google." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" id="floatingWhatsapp" aria-label="Abrir conversa no WhatsApp">
+    <div class="float-tooltip">Falar com especialista agora!</div>
+    <div class="float-badge">1</div>
+    <img src="assets/whatsapp.svg" alt="WhatsApp" class="float-wa-icon" width="36" height="36">
+  </a>
+
+  <!-- Script Interativo -->
+  <script src="script.js"></script>
+</body>
+</html>

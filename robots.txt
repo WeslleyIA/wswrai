@@ -1,0 +1,6 @@
+# robots.txt para WSWR IA
+User-agent: *
+Allow: /
+
+# Sitemap oficial para indexação no Google Search Console
+Sitemap: https://wswr.com.br/sitemap.xml
